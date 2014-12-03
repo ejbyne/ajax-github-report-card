@@ -54,7 +54,7 @@
           addProfileFromUsername($('#username').val())
         });
         $('.profile-container').on('click', '.close', function() {
-          $(this).parent().slideUp(function() {
+          $(this).closest('.profile').slideUp(function() {
             $(this).remove();
           })
         });
