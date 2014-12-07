@@ -7,11 +7,18 @@
 
   <body>
     <form id='add_profile'>
-      <input id='username' placeholder='Enter a Github username'>
+      <input id='username' placeholder='Enter a Github username' autocomplete='off'>
       <button type='submit'>Load profile</button>
     </form>
 
     <div class='profile-container'>
+      <img src='public/spinner.gif' class='spinner'>
+    </div>
+
+    <div class='modal'>
+      <h2>User not found!</h2>
+      <p>Could not find that User :-(</p>
+      <a class="close" href="#">✖</a>
     </div>
 
     <template id='profile-template'>
