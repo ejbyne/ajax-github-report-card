@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   $('#add_profile').submit(function(event) {
     event.preventDefault();
-    addProfileFromUsername($('#username').val())
+    addProfileFromUsername($('#username').val());
   });
 
   $('.profile-container').on('click', '.close', function() {
